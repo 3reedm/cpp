@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="5.97" multi-file="no">
+  <meta>
+    <name>Project</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <management>
+    <persons>
+      <person id="P0bd40b532ebc47cfb23cc452a7b98f8a">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <tasks />
+    <requirements />
+    <issues />
+    <to-dos />
+  </management>
+  <glossary />
+  <types>
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="virtual bool" name="virtual bool" description="" />
+      <type id="virtual" name="virtual" description="" />
+      <type id="= 0:bool" name="= 0:bool" description="" />
+      <type id="= 0" name="= 0" description="" />
+      <type id="bool" name="bool" description="" />
+      <type id="= 0:char*" name="= 0:char*" description="" />
+      <type id="char*" name="char*" description="" />
+      <type id="berkeleydb::Db*" name="berkeleydb::Db*" description="" />
+      <type id="HashTableLow*" name="HashTableLow*" description="" />
+      <type id="leveldb : :DB*" name="leveldb : :DB*" description="" />
+      <type id="hamsterdb::ham_db_t*" name="hamsterdb::ham_db_t*" description="" />
+      <type id="unsigned int" name="unsigned int" description="" />
+      <type id="string" name="string" description="" />
+      <type id="kyotocabinet : :HashDB" name="kyotocabinet : :HashDB" description="" />
+      <type id="void" name="void" description="" />
+      <type id="MainWindow*" name="MainWindow*" description="" />
+      <type id="berkeleydb::Db" name="berkeleydb::Db" description="" />
+    </custom-types>
+  </types>
+  <style-set name="">
+    <default-style>
+      <style-definition background-type="vertical-linear" background-color="#FFD3D3D3" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-2,-2" shadow-size="6,6" shadow-visible="true" shadow-color="#50000000" shadow-radius="6" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Microsoft Sans Serif;10;B" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF1E1E1E" part-header-font="Microsoft Sans Serif;9;I" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Microsoft Sans Serif;10;" text-horizontal-alignment="left" text-vertical-alignment="center" tagged-value-color="#FF1E1E1E" tagged-value-font="Microsoft Sans Serif;9;I" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Microsoft Sans Serif;9;I" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </default-style>
+    <style class="">
+      <item-type stereotype="" type="UmlClass" />
+      <style-definition background-type="vertical-linear" background-color="#FF0080FF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlActor" />
+      <style-definition background-type="vertical-linear" background-color="#FFFF952B" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlUseCase" />
+      <style-definition background-type="vertical-linear" background-color="#FF6AD500" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlActivity" />
+      <style-definition background-type="vertical-linear" background-color="#FF2BFF95" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlState" />
+      <style-definition background-type="vertical-linear" background-color="#FF00D5D5" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlCompositeState" />
+      <style-definition background-type="vertical-linear" background-color="#FF55FFFF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlSignalReceipt" />
+      <style-definition background-type="vertical-linear" background-color="#FF55FF55" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlSignalSending" />
+      <style-definition background-type="vertical-linear" background-color="#FFFF5555" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlComponent" />
+      <style-definition background-type="vertical-linear" background-color="#FF2B2BFF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlCommunicationLifeline" />
+      <style-definition background-type="vertical-linear" background-color="#FFD500D5" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlObject" />
+      <style-definition background-type="vertical-linear" background-color="#FFAA55FF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlDecision" />
+      <style-definition background-type="vertical-linear" background-color="#FF555555" background-color2="#FFBFBFBF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlPackage" />
+      <style-definition background-type="vertical-linear" background-color="#FFD56A00" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" />
+      <style-definition background-type="vertical-linear" background-color="#FFFF55FF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlSwimlane" />
+      <style-definition background-type="vertical-linear" background-color="#FF80BFFF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="false" shadow-color="#50000000" shadow-radius="0" gloss-effect="false" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlSystemBoundary" />
+      <style-definition background-type="vertical-linear" background-color="#FFFFFF55" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="false" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="ErdEntity" />
+      <style-definition background-type="vertical-linear" background-color="#FFBFFF80" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlComment" />
+      <style-definition background-type="backward-diagonal" background-color="#FFFFAA55" background-color2="#FFFFFF80" border-color="#FFFF952B" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="7" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+  </style-set>
+  <filters />
+  <items>
+    <item id="di584137065624263519" cid="C006" type="class" name="BerkeleyDB : public Store" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:52">
+      <stereotypes />
+      <tagged-values />
+      <documentation>
+        <text>
+          <content>
+            <paragraph line-spacing="1">
+              <p index="0">
+                <t />
+                <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                  <text>
+                    <solid-brush color="#FF000000" />
+                  </text>
+                </style>
+              </p>
+            </paragraph>
+          </content>
+        </text>
+      </documentation>
+      <cooperation>
+        <participants />
+        <comments />
+      </cooperation>
+      <associated-diagrams />
+      <owned-items />
+      <style background-type="vertical-linear" background-color="#FF2BFF95" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+      <attributes>
+        <attribute id="a030ecee980384b81afc019c72f3e4806678" name="table_" type="berkeleydb::Db" type-id="berkeleydb::Db" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a9957f1b4d0b749b9844199d5cbe154aa993" name="fileName_" type="string" type-id="string" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+      </attributes>
+      <operations>
+        <operation id="of1b37eb5b0764038bd1b4168aaeaca9f355" name="BerkeleyDB" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes>
+            <stereotype>create</stereotype>
+          </stereotypes>
+          <documentation>
+            <text>
+              <content>
+                <paragraph line-spacing="1">
+                  <p index="0">
+                    <t />
+                    <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                      <text>
+                        <solid-brush color="#FF000000" />
+                      </text>
+                    </style>
+                  </p>
+                </paragraph>
+              </content>
+            </text>
+          </documentation>
+          <source-codes>
+            <source-code language="ActionScript" />
+          </source-codes>
+        </operation>
+        <operation id="o63bf3cd7f9bc4c5a921b12652c60ddbf98" name="BerkeleyDB" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="const BerkeleyDB&amp; tableCopy" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="od19264f8c95f4e4e9b305b896811652f207" name="BerkeleyDB" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes>
+            <stereotype>destroy</stereotype>
+          </stereotypes>
+          <documentation>
+            <text>
+              <content>
+                <paragraph line-spacing="1">
+                  <p index="0">
+                    <t />
+                    <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                      <text>
+                        <solid-brush color="#FF000000" />
+                      </text>
+                    </style>
+                  </p>
+                </paragraph>
+              </content>
+            </text>
+          </documentation>
+          <source-codes>
+            <source-code language="ActionScript" />
+          </source-codes>
+        </operation>
+        <operation id="o9eb3c6f04ec24634b105a23ceaab3b90693" name="write" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+            <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+            <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="of5ff757423ea46bb821e1d88a5c60d55157" name="read" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="od9adf444ef654c11a6261b2dd6fc1757139" name="getRandomKey" type="char*" type-id="char*" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+            <parameter id="" name="int&amp; bitsKeyReal" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+      </operations>
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+    <item id="di323967266232187257" cid="CMT001" type="comment" name="Comment" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 20:06:10">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <comment>Класс окна библиотеки Qt для вывода результатов тестирования в виде гистограммы. Данные для рисования получает из созданных в процессе тестирования (основная часть программы) файлов. Не является обязательным.</comment>
+    </item>
+    <item id="di958894173270524607" cid="CN001" type="comment-connector" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 20:06:10">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di425480976695098788" cid="C014" type="class" name="MainWindow : public QMainWindow" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 20:02:44">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style background-type="vertical-linear" background-color="#FF7F7F7F" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+      <attributes>
+        <attribute id="acbf868f9065a415abf8d286808d0d7f7981" name="ui" type="MainWindow*" type-id="MainWindow*" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+      </attributes>
+      <operations>
+        <operation id="of77e78f8117f48f2b0a920ee416e59cb939" name="explicit MainWindow" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="QWidget* parent = 0" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oa8efad25083140358a7ac22e4194a5854" name="MainWindow" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="ob42018c0ab7242febf9de6f51d9ae843182" name="paintEvent" type="void" type-id="void" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="QPaintEvent* event = 0" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o18eb8efb46924c3ba8548da0de8a762b444" name="getResults" type="void" type-id="void" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char mode" type="" type-id="" default-value="" />
+            <parameter id="" name="int* ptrResults" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+      </operations>
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+  </items>
+  <models>
+    <model id="p794050185125908421" name="Model 1" type="model" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>04/21/2014 19:02:58</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <tagged-values />
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p582081516666124777" name="ClassDiagram1" order-index="1" show-nullability="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>04/21/2014 19:02:58</creation-date>
+          <change-date>04/21/2014 20:14:03</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values />
+        <abstract-items>
+          <item id="di879090817729125438" cid="C003" type="class" name="Store" style-class="default" is-abstract="true" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:06:55">
+            <stereotypes>
+              <stereotype name="struct" />
+            </stereotypes>
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes />
+            <operations>
+              <operation id="o9f56c22bd1414439ab84b0e8d2b7ef95435" name="virtual ~Store" type="" type-id="" visibility="public" abstract="false" virtual="true" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>destroy</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o3dc0217ed0304a3ebc5024f39289ddb9859" name="virtual write" type="= 0:bool" type-id="= 0:bool" visibility="public" abstract="false" virtual="true" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oa33b3e002adb41ba933ceebbb5b75cba662" name="virtual read" type="= 0:bool" type-id="= 0:bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o71d021e8382645a7bc5d51d2376ad6d4492" name="virtual getRandomKey" type="= 0:char*" type-id="= 0:char*" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int&amp; bitsKeyReal" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di418273144304547546" cid="C004" type="class" name="MyTable : public Store" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:41">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF2BFF95" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+            <attributes>
+              <attribute id="a6348a160d5e64dbaaed99adc3157f92e928" name="table_" type="HashTableLow*" type-id="HashTableLow*" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="obd210e31aed44a6bb2b60fe1280bdde2239" name="MyTable" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <definition>
+                      <sections>
+                        <section name="">
+                          <header>
+                            <text>
+                              <content>
+                                <paragraph line-spacing="1">
+                                  <p index="0">
+                                    <t />
+                                    <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                                      <text>
+                                        <solid-brush color="#FF000000" />
+                                      </text>
+                                    </style>
+                                  </p>
+                                </paragraph>
+                              </content>
+                            </text>
+                          </header>
+                          <footer>
+                            <text>
+                              <content>
+                                <paragraph line-spacing="1">
+                                  <p index="0">
+                                    <t />
+                                    <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                                      <text>
+                                        <solid-brush color="#FF000000" />
+                                      </text>
+                                    </style>
+                                  </p>
+                                </paragraph>
+                              </content>
+                            </text>
+                          </footer>
+                          <default-page>
+                            <page size="21,29.7" header-offset="15" footer-offset="15" unit="mm">
+                              <margins left="20" right="20" top="20" bottom="20" />
+                            </page>
+                          </default-page>
+                        </section>
+                      </sections>
+                      <pages />
+                    </definition>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o71396b4957304472a4d3e4378a7a6ac4441" name="MyTable" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name=" int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ob4dfe63967664284b4d12251431f7373740" name="MyTable" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const MyTable&amp; tableCopy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ocd7f59b5e64341619f2d36267d71b0c9446" name="MyTable" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>destroy</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o4976148420ff47a7a7ad7a4a8ec00f87470" name="write" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o6d6e7319ec5643df99feb77112e97b94376" name="read" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o39c0c87ad48a463bbd2acc023c4b9c56472" name="getRandomKey" type="char*" type-id="char*" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int&amp; bitsKeyReal" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di543862732375293362" cid="GNR001" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:41">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di379640060399869196" cid="C005" type="class" name="LevelDB : public Store" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:45">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF2BFF95" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+            <attributes>
+              <attribute id="a9ee970d00ac9444f8ac1e1031776f146605" name="table_" type="leveldb : :DB*" type-id="leveldb : :DB*" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a263194f30a434d2da1934d7ffe0305479" name="path_" type="string" type-id="string" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o06098b074186464685d98d2c145d87e0397" name="LevelDB" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o780dbffed9af4efd9901c6fb522ddb9a545" name="LevelDB" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const LevelDB&amp; tableCopy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o1827cc3c15d24d339a8a81bce021845f610" name="LevelDB" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>destroy</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o20d8d289b9714994b60aee25de73b833563" name="write" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o4ef6ec5630ca4d14b0b81de3c9d4a21d634" name="read" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o60fb4c34bc5942f8ba37039aa2568a86937" name="getRandomKey" type="char*" type-id="char*" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int&amp; bitsKeyReal" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di120067818680448412" cid="GNR002" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:45">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di379684076144976829" cid="C010" type="class" name="Tester" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:53:18">
+            <stereotypes>
+              <stereotype name="struct" />
+            </stereotypes>
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FFFF2B2B" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+            <attributes />
+            <operations>
+              <operation id="oefe2e28f42bc421f8716731742f91333857" name="getRandomBytes" type="char*" type-id="char*" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int length" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o8173d157964c41eea6ec45bad13a9102837" name="writeTest" type="unsigned int" type-id="unsigned int" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Store* ptrStore" type="" type-id="" default-value="" />
+                  <parameter id="" name="int nWrites" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o85523c65910449ca8bde4ec1db933ddf900" name="readTest" type="unsigned int" type-id="unsigned int" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Store* ptrStore" type="" type-id="" default-value="" />
+                  <parameter id="" name="int nReads" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o2df69171287d4902bfd98362eb73282f439" name="overwriteTest" type="unsigned int" type-id="unsigned int" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Store* ptrStore" type="" type-id="" default-value="" />
+                  <parameter id="" name="int nWrites" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di400254447992600995" cid="GNR003" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:52">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di778852502212763718" cid="C007" type="class" name="Hamsterdb : public Store" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:59">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF2BFF95" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+            <attributes>
+              <attribute id="a01c05acbfe97466587dbf235d9245451507" name="table_" type="hamsterdb::ham_db_t*" type-id="hamsterdb::ham_db_t*" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="obd9ef69d8f9f40dd95185a17d4e1a371312" name="Hamsterdb" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o619d164a15674b349cf0b49ab15062af719" name="Hamsterdb" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Hamsterdb&amp; tableCopy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oedab85c29a6a4ddeb46413e39ee31541475" name="Hamsterdb" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>destroy</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ob6496fbdea324448a7f86dc48ad77a6926" name="write" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oc5021e7b94e54b9a88cde8f31cb78bcf625" name="read" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ob07e281db02c4594ba97b343edecf256612" name="getRandomKey" type="char*" type-id="char*" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int&amp; bitsKeyReal" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di685954843140942763" cid="GNR004" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:59">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di965518853688844956" cid="C008" type="class" name="KyotoCabinet : public Store" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:15:08">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF2BFF95" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+            <attributes>
+              <attribute id="a99f73250d39d4c8bb24d3adae23420c5206" name="table_" type="kyotocabinet : :HashDB" type-id="kyotocabinet : :HashDB" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a428b27dadaba43dcba89fd582b204683642" name="fileName_" type="string" type-id="string" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oddc47c7c15554646af65950697f1fba1251" name="KyotoCabinet" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oe14ce930894f430187f0df98c51afc92474" name="KyotoCabinet" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const KyotoCabinet&amp; tableCopy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o4941e4b990ae4ee4a0de487f04f060f0722" name="KyotoCabinet" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>destroy</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o03f286f3b11147bbbfa0fe9e2d3c5f5a0" name="write" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ob79f71c4ff2440c0ac264ac88f75d671360" name="read" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o022fd8ab8b7c48bfaf5a5a2803634990296" name="getRandomKey" type="char*" type-id="char*" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int&amp; bitsKeyReal" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di521107829961744797" cid="GNR005" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:15:08">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di975736626784409507" cid="C004" type="class" name="MyTable" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:14:41">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF2BFF95" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+            <attributes>
+              <attribute id="a6348a160d5e64dbaaed99adc3157f92e928" name="HashTableLow* table_" type="" type-id="" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="obd210e31aed44a6bb2b60fe1280bdde2239" name="MyTable" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <definition>
+                      <sections>
+                        <section name="">
+                          <header>
+                            <text>
+                              <content>
+                                <paragraph line-spacing="1">
+                                  <p index="0">
+                                    <t />
+                                    <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                                      <text>
+                                        <solid-brush color="#FF000000" />
+                                      </text>
+                                    </style>
+                                  </p>
+                                </paragraph>
+                              </content>
+                            </text>
+                          </header>
+                          <footer>
+                            <text>
+                              <content>
+                                <paragraph line-spacing="1">
+                                  <p index="0">
+                                    <t />
+                                    <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                                      <text>
+                                        <solid-brush color="#FF000000" />
+                                      </text>
+                                    </style>
+                                  </p>
+                                </paragraph>
+                              </content>
+                            </text>
+                          </footer>
+                          <default-page>
+                            <page size="21,29.7" header-offset="15" footer-offset="15" unit="mm">
+                              <margins left="20" right="20" top="20" bottom="20" />
+                            </page>
+                          </default-page>
+                        </section>
+                      </sections>
+                      <pages />
+                    </definition>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o71396b4957304472a4d3e4378a7a6ac4441" name="MyTable" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name=" int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ob4dfe63967664284b4d12251431f7373740" name="MyTable" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const MyTable&amp; tableCopy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ocd7f59b5e64341619f2d36267d71b0c9446" name="MyTable" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes>
+                  <stereotype>destroy</stereotype>
+                </stereotypes>
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o4976148420ff47a7a7ad7a4a8ec00f87470" name="write" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o6d6e7319ec5643df99feb77112e97b94376" name="read" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o39c0c87ad48a463bbd2acc023c4b9c56472" name="getRandomKey" type="char*" type-id="char*" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int&amp; bitsKeyReal" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di510743878942689618" cid="DEP003" type="dependency" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 19:56:34">
+            <stereotypes>
+              <stereotype name="use" />
+            </stereotypes>
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di738065636110200880" cid="REL002" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P0bd40b532ebc47cfb23cc452a7b98f8a" creation-date="04/21/2014 20:14:03">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di379684076144976829" to="di425480976695098788">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di879090817729125438" iid="966b303d4d5b411a8489474ff103e368" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:06:55" order-index="0" type="entity">
+            <layout ax="344.5" ay="227.5" awidth="401" aheight="136" x="344.5" y="227.5" width="401" height="136" angle="0" />
+            <class />
+          </item>
+          <item id="di418273144304547546" iid="fcb72e3dccaf405394f91ac57aaeb2ea" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:14:41" order-index="1" type="entity">
+            <layout ax="-100" ay="191.5" awidth="294" aheight="204" x="-100" y="191.5" width="294" height="204" angle="0" />
+            <class />
+          </item>
+          <item id="di543862732375293362" iid="a4bd47a2544b42d8bc75affad295104f" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:14:41" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="194" y1="295" x2="344" y2="295" start-border-pos="0.37633622861376" end-border-pos="0.87443525650922">
+              <points>
+                <point x="194" y="295" />
+                <point x="344" y="295" />
+              </points>
+            </layout>
+            <relation from="di418273144304547546" from-iid="fcb72e3dccaf405394f91ac57aaeb2ea" to="di879090817729125438" to-iid="966b303d4d5b411a8489474ff103e368" />
+          </item>
+          <item id="di379640060399869196" iid="8c685611de4349ccaf108cc4dd6a1820" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:14:45" order-index="3" type="entity">
+            <layout ax="375" ay="490.5" awidth="340" aheight="199" x="375" y="490.5" width="340" height="199" angle="0" />
+            <class />
+          </item>
+          <item id="di120067818680448412" iid="d44368bc496a40189d58ee6e57a6c8c0" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:14:45" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="545" y1="490" x2="545" y2="364" start-border-pos="0.125" end-border-pos="0.625">
+              <points>
+                <point x="545" y="490" />
+                <point x="545" y="364" />
+              </points>
+            </layout>
+            <relation from="di379640060399869196" from-iid="8c685611de4349ccaf108cc4dd6a1820" to="di879090817729125438" to-iid="966b303d4d5b411a8489474ff103e368" />
+          </item>
+          <item id="di400254447992600995" iid="2297cca6ece145ba801720a9009b5f19" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:14:52" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="843" y1="296" x2="746" y2="296" start-border-pos="0.875" end-border-pos="0.375919117647059">
+              <points>
+                <point x="843" y="296" />
+                <point x="746" y="296" />
+              </points>
+            </layout>
+            <relation from="di584137065624263519" from-iid="de3cc745b11045d3959cd8f574602fdd" to="di879090817729125438" to-iid="966b303d4d5b411a8489474ff103e368" />
+          </item>
+          <item id="di778852502212763718" iid="fefe494ff83f4e709017584d8d3056c2" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:14:59" order-index="7" type="entity">
+            <layout ax="-13" ay="-16.5" awidth="388" aheight="184" x="-13" y="-16.5" width="388" height="184" angle="0" />
+            <class />
+          </item>
+          <item id="di685954843140942763" iid="8fe39ed2653844ec95b4d8de2e0488ba" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:14:59" order-index="8" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="332" y1="168" x2="432" y2="228" start-border-pos="0.722012647648448" end-border-pos="0.0548571731681538">
+              <points>
+                <point x="332" y="168" />
+                <point x="432" y="228" />
+              </points>
+            </layout>
+            <relation from="di778852502212763718" from-iid="fefe494ff83f4e709017584d8d3056c2" to="di879090817729125438" to-iid="966b303d4d5b411a8489474ff103e368" />
+          </item>
+          <item id="di965518853688844956" iid="c837c20b67e34fb486700ac769cb0f09" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:15:08" order-index="9" type="entity">
+            <layout ax="765" ay="6.5" awidth="460" aheight="167" x="765" y="6.5" width="460" height="167" angle="0" />
+            <class />
+          </item>
+          <item id="di521107829961744797" iid="04ebd1dba9ce4480b425e3558505718d" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:15:08" order-index="10" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="814" y1="174" x2="694" y2="228" start-border-pos="0.526461592964504" end-border-pos="0.217608292501169">
+              <points>
+                <point x="814" y="174" />
+                <point x="694" y="228" />
+              </points>
+            </layout>
+            <relation from="di965518853688844956" from-iid="c837c20b67e34fb486700ac769cb0f09" to="di879090817729125438" to-iid="966b303d4d5b411a8489474ff103e368" />
+          </item>
+          <item id="di584137065624263519" iid="de3cc745b11045d3959cd8f574602fdd" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:14:52" order-index="5" type="entity">
+            <layout ax="843" ay="213.5" awidth="424" aheight="165" x="843" y="213.5" width="424" height="165" angle="0" />
+            <class />
+          </item>
+          <item id="di379684076144976829" iid="5bca457513e34e06b8e76f80cadb1c79" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:53:18" order-index="11" type="entity">
+            <layout ax="387" ay="-232.5" awidth="356" aheight="162" x="387" y="-232.5" width="356" height="162" angle="0" />
+            <class />
+          </item>
+          <item id="di510743878942689618" iid="331f7644ba114f2e84a8d84e16befae8" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 19:56:34" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="553" y1="-70" x2="550" y2="228" start-border-pos="0.616573033707865" end-border-pos="0.128157009210373">
+              <points>
+                <point x="553" y="-70" />
+                <point x="553" y="-70" />
+                <point x="553" y="-17" />
+                <point x="553" y="37" />
+                <point x="552" y="202" />
+                <point x="550" y="228" />
+              </points>
+            </layout>
+            <relation from="di379684076144976829" from-iid="5bca457513e34e06b8e76f80cadb1c79" to="di879090817729125438" to-iid="966b303d4d5b411a8489474ff103e368" />
+          </item>
+          <item id="di323967266232187257" iid="d69070a948c64f82b79b1ab46a199db1" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 20:06:10" order-index="14" type="entity">
+            <layout ax="100" ay="-412" awidth="286" aheight="111" x="100" y="-412" width="286" height="111" angle="0" />
+          </item>
+          <item id="di958894173270524607" iid="361d51b0d434445989a14eacb8bd0888" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 20:06:10" order-index="15" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="207" y1="-301" x2="176" y2="-255" start-border-pos="0.593149038461538" end-border-pos="0.15632010728885">
+              <points>
+                <point x="207" y="-301" />
+                <point x="176" y="-255" />
+              </points>
+            </layout>
+            <relation from="di323967266232187257" from-iid="d69070a948c64f82b79b1ab46a199db1" to="di425480976695098788" to-iid="9806e6291007436ea7af589f12ad1b6c" />
+          </item>
+          <item id="di425480976695098788" iid="9806e6291007436ea7af589f12ad1b6c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 20:02:44" order-index="13" type="entity">
+            <layout ax="-19" ay="-255" awidth="312" aheight="118" x="-19" y="-255" width="312" height="118" angle="0" />
+            <class />
+          </item>
+          <item id="di738065636110200880" iid="c75083f0ba634095ad41255411c39711" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="04/21/2014 20:14:03" order-index="16" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="387" y1="-170" x2="293" y2="-180" start-border-pos="0.845989086009838" end-border-pos="0.408977508544922">
+              <points>
+                <point x="387" y="-170" />
+                <point x="293" y="-180" />
+              </points>
+            </layout>
+            <relation from="di379684076144976829" from-iid="5bca457513e34e06b8e76f80cadb1c79" to="di425480976695098788" to-iid="9806e6291007436ea7af589f12ad1b6c" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+  <documents />
+  <document-templates />
+</sim-project>

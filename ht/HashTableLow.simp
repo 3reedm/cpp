@@ -1,0 +1,1424 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="5.97" multi-file="no">
+  <meta>
+    <name>HashTable</name>
+    <authors>Istay</authors>
+    <description />
+  </meta>
+  <management>
+    <persons>
+      <person id="P8183fd5415854afcae75ef960ebe3f89">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <tasks />
+    <requirements />
+    <issues />
+    <to-dos />
+  </management>
+  <glossary />
+  <types>
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id=":ifstream" name=":ifstream" description="" />
+      <type id="string fileName" name="string fileName" description="" />
+      <type id="string filename" name="string filename" description="" />
+      <type id=":fstream fileData_" name=":fstream fileData_" description="" />
+      <type id=":vector&lt;char* &gt; offsets_" name=":vector&lt;char* &gt; offsets_" description="" />
+      <type id="{}" name="{}" description="" />
+      <type id="=0 : unsigned int" name="=0 : unsigned int" description="" />
+      <type id="unsigned int" name="unsigned int" description="" />
+      <type id="size_t&amp; index" name="size_t&amp; index" description="" />
+      <type id="std::pair&lt;char*, char*&gt;&amp;" name="std::pair&lt;char*, char*&gt;&amp;" description="" />
+      <type id="size_t bitsKey" name="size_t bitsKey" description="" />
+      <type id="size_t bitsValue" name="size_t bitsValue" description="" />
+      <type id="=0 : std::pair&lt;char*, char*&gt;" name="=0 : std::pair&lt;char*, char*&gt;" description="" />
+      <type id="=0 : bool" name="=0 : bool" description="" />
+      <type id="=0 : std::size_t" name="=0 : std::size_t" description="" />
+      <type id="HashTableLow*" name="HashTableLow*" description="" />
+      <type id="size_type" name="size_type" description="" />
+      <type id="Iterator" name="Iterator" description="" />
+      <type id="reference" name="reference" description="" />
+      <type id="pointer" name="pointer" description="" />
+      <type id="Iterator&amp;" name="Iterator&amp;" description="" />
+      <type id="difference_type" name="difference_type" description="" />
+      <type id="bool" name="bool" description="" />
+      <type id="size_t lengthMassive" name="size_t lengthMassive" description="" />
+      <type id="=0 : std::pair&lt;char*, char*&gt;*" name="=0 : std::pair&lt;char*, char*&gt;*" description="" />
+      <type id="void" name="void" description="" />
+      <type id="std::fstream" name="std::fstream" description="" />
+      <type id="std::string" name="std::string" description="" />
+      <type id="std : :size_t" name="std : :size_t" description="" />
+      <type id="std::pair&lt;char*, char*&gt;" name="std::pair&lt;char*, char*&gt;" description="" />
+      <type id="HashTableLow::Iterator" name="HashTableLow::Iterator" description="" />
+      <type id="HashFunction*" name="HashFunction*" description="" />
+      <type id="HashTableHigh*" name="HashTableHigh*" description="" />
+      <type id="std::pair&lt;K, V&gt;" name="std::pair&lt;K, V&gt;" description="" />
+      <type id="HashTableHigh::Iterator" name="HashTableHigh::Iterator" description="" />
+      <type id="string fileOffsetsName" name="string fileOffsetsName" description="" />
+      <type id="string fileHashTableName" name="string fileHashTableName" description="" />
+      <type id="std::size_t" name="std::size_t" description="" />
+      <type id="size_t bitsKey_" name="size_t bitsKey_" description="" />
+      <type id="int" name="int" description="" />
+      <type id="std ()::pair&lt;K, V&gt;&amp;" name="std ()::pair&lt;K, V&gt;&amp;" description="" />
+      <type id="std::vector&lt;char*&gt;" name="std::vector&lt;char*&gt;" description="" />
+      <type id="std::pair&lt;char*, char*&gt;*" name="std::pair&lt;char*, char*&gt;*" description="" />
+      <type id="(std::string fileOffsetsName, std::string fileHashTableName, int bitsOffsetInput, int bitsKeyInput, int bitsValueInput, int searchStrategyInput, int stepInput)" name="(std::string fileOffsetsName, std::string fileHashTableName, int bitsOffsetInput, int bitsKeyInput, int bitsValueInput, int searchStrategyInput, int stepInput)" description="" />
+      <type id="std::vector&lt;std::list&lt;char*&gt; &gt;" name="std::vector&lt;std::list&lt;char*&gt; &gt;" description="" />
+      <type id="size_t index" name="size_t index" description="" />
+      <type id="std::vector&lt;bool&gt;" name="std::vector&lt;bool&gt;" description="" />
+      <type id="size_t newLengthBuckets" name="size_t newLengthBuckets" description="" />
+      <type id="string fileNameOffsetsInput" name="string fileNameOffsetsInput" description="" />
+      <type id="string fileNameHashTableInput" name="string fileNameHashTableInput" description="" />
+      <type id=")" name=")" description="" />
+      <type id="size_t* newLength" name="size_t* newLength" description="" />
+      <type id="virtual" name="virtual" description="" />
+      <type id="std::vector&lt;std::list&lt;bool&gt; &gt;" name="std::vector&lt;std::list&lt;bool&gt; &gt;" description="" />
+      <type id="(std::string fileNameOffsetsInput, std::string fileNameHashTableInput, int bitsOffsetInput, int bitsKeyInput, int bitsValueInput, int sizeBlockInput)" name="(std::string fileNameOffsetsInput, std::string fileNameHashTableInput, int bitsOffsetInput, int bitsKeyInput, int bitsValueInput, int sizeBlockInput)" description="" />
+      <type id="string fileNameInfoInput" name="string fileNameInfoInput" description="" />
+      <type id="(std::string fileNameOffsetsInput, std::string fileNameHashTableInput, std::string fileNameInfoInput, int lengthBucketsInput, int bitsOffsetInput, int bitsKeyInput, int bitsValueInput, int sizeBlockInput)" name="(std::string fileNameOffsetsInput, std::string fileNameHashTableInput, std::string fileNameInfoInput, int lengthBucketsInput, int bitsOffsetInput, int bitsKeyInput, int bitsValueInput, int sizeBlockInput)" description="" />
+      <type id="size_t&amp; indexList" name="size_t&amp; indexList" description="" />
+      <type id="std::size_t*" name="std::size_t*" description="" />
+    </custom-types>
+  </types>
+  <style-set name="">
+    <default-style>
+      <style-definition background-type="vertical-linear" background-color="#FFD3D3D3" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-2,-2" shadow-size="6,6" shadow-visible="true" shadow-color="#50000000" shadow-radius="6" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Microsoft Sans Serif;10;B" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF1E1E1E" part-header-font="Microsoft Sans Serif;9;I" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Microsoft Sans Serif;10;" text-horizontal-alignment="left" text-vertical-alignment="center" tagged-value-color="#FF1E1E1E" tagged-value-font="Microsoft Sans Serif;9;I" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Microsoft Sans Serif;9;I" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </default-style>
+    <style class="">
+      <item-type stereotype="" type="UmlClass" />
+      <style-definition background-type="vertical-linear" background-color="#FF0080FF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlActor" />
+      <style-definition background-type="vertical-linear" background-color="#FFFF952B" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlUseCase" />
+      <style-definition background-type="vertical-linear" background-color="#FF6AD500" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlActivity" />
+      <style-definition background-type="vertical-linear" background-color="#FF2BFF95" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlState" />
+      <style-definition background-type="vertical-linear" background-color="#FF00D5D5" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlCompositeState" />
+      <style-definition background-type="vertical-linear" background-color="#FF55FFFF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlSignalReceipt" />
+      <style-definition background-type="vertical-linear" background-color="#FF55FF55" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlSignalSending" />
+      <style-definition background-type="vertical-linear" background-color="#FFFF5555" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlComponent" />
+      <style-definition background-type="vertical-linear" background-color="#FF2B2BFF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlCommunicationLifeline" />
+      <style-definition background-type="vertical-linear" background-color="#FFD500D5" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlObject" />
+      <style-definition background-type="vertical-linear" background-color="#FFAA55FF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlDecision" />
+      <style-definition background-type="vertical-linear" background-color="#FF555555" background-color2="#FFBFBFBF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlPackage" />
+      <style-definition background-type="vertical-linear" background-color="#FFD56A00" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" />
+      <style-definition background-type="vertical-linear" background-color="#FFFF55FF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlSwimlane" />
+      <style-definition background-type="vertical-linear" background-color="#FF80BFFF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="false" shadow-color="#50000000" shadow-radius="0" gloss-effect="false" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlSystemBoundary" />
+      <style-definition background-type="vertical-linear" background-color="#FFFFFF55" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="false" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="ErdEntity" />
+      <style-definition background-type="vertical-linear" background-color="#FFBFFF80" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+    <style class="">
+      <item-type stereotype="" type="UmlComment" />
+      <style-definition background-type="backward-diagonal" background-color="#FFFFAA55" background-color2="#FFFFFF80" border-color="#FFFF952B" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="7" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+    </style>
+  </style-set>
+  <filters />
+  <items>
+    <item id="di482938329495707408" cid="C011" type="class" name="Class11" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:56:42">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes />
+      <operations />
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+    <item id="di500656545595181547" cid="GNR003" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:33:08">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di841998530274193225" cid="C009" type="class" name="DefaultHashFunction" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:33:08">
+      <stereotypes>
+        <stereotype name="struct" />
+      </stereotypes>
+      <tagged-values />
+      <documentation>
+        <text>
+          <content>
+            <paragraph line-spacing="1">
+              <p index="0">
+                <t />
+                <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                  <text>
+                    <solid-brush color="#FF000000" />
+                  </text>
+                </style>
+              </p>
+            </paragraph>
+          </content>
+        </text>
+      </documentation>
+      <cooperation>
+        <participants />
+        <comments />
+      </cooperation>
+      <associated-diagrams />
+      <owned-items />
+      <style background-type="vertical-linear" background-color="#FFFF8000" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+      <attributes />
+      <operations>
+        <operation id="obc494d6af12b46f88e9494c7e960b530579" name="DefaultHashFunction" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="od1ec43861419490eab4525994b9323d4207" name="DefaultHashFunction" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="od644a02d03ee4942b24775754dd3fe76878" name="getHashCode" type="unsigned int" type-id="unsigned int" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* key" type="" type-id="" default-value="" />
+            <parameter id="" name="unsigned int length" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+      </operations>
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+    <item id="di717828953470859571" cid="C005" type="class" name="HashFunction" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:23:19">
+      <stereotypes>
+        <stereotype name="struct" />
+      </stereotypes>
+      <tagged-values />
+      <documentation>
+        <text>
+          <content>
+            <paragraph line-spacing="1">
+              <p index="0">
+                <t />
+                <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                  <text>
+                    <solid-brush color="#FF000000" />
+                  </text>
+                </style>
+              </p>
+            </paragraph>
+          </content>
+        </text>
+      </documentation>
+      <cooperation>
+        <participants />
+        <comments />
+      </cooperation>
+      <associated-diagrams />
+      <owned-items />
+      <style background-type="vertical-linear" background-color="#FFFF0000" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+      <attributes />
+      <operations>
+        <operation id="o1190f4aee6634cf283a3fbedf3b9a189891" name="virtual getHashCode" type="=0 : unsigned int" type-id="=0 : unsigned int" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* key" type="" type-id="" default-value="" />
+            <parameter id="" name="unsigned int length" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oc2462130f8f84ec29c1177544fa7f5be419" name="virtual ~HashFunction" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+      </operations>
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+    <item id="di633645510742265538" cid="C001" type="class" name="HashTableLow" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:22:20">
+      <stereotypes />
+      <tagged-values />
+      <documentation>
+        <text>
+          <content>
+            <paragraph line-spacing="1">
+              <p index="0">
+                <t />
+                <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                  <text>
+                    <solid-brush color="#FF000000" />
+                  </text>
+                </style>
+              </p>
+            </paragraph>
+          </content>
+        </text>
+      </documentation>
+      <cooperation>
+        <participants />
+        <comments />
+      </cooperation>
+      <associated-diagrams />
+      <owned-items />
+      <style background-type="vertical-linear" background-color="#FF00D500" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+      <attributes>
+        <attribute id="a4181ded79c45486b9be33425332bb7ac193" name="nBuckets_, lengthBuckets_, bitsOffset_, bitsKey_, bitsValue_" type="std : :size_t" type-id="std : :size_t" visibility="protected" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="aceb109991dee426aa535fe9b55f91359231" name="fileOffsets_, fileHashTable_, fileInfo_" type="std::fstream" type-id="std::fstream" visibility="protected" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a1e90c4bd7b82433f848b67eca352e858604" name="fileNameOffsets_, fileNameHashTable_, fileNameInfo_" type="std::string" type-id="std::string" visibility="protected" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="adf7d074e80654099859ad6472325671e676" name="resultLow_" type="std::pair&lt;char*, char*&gt;" type-id="std::pair&lt;char*, char*&gt;" visibility="protected" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="ab2b56f6101ce49209ca0366000edb589668" name="iteratorLow_" type="HashTableLow::Iterator" type-id="HashTableLow::Iterator" visibility="protected" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="aa36c15166014405d96f8917e57caaa1f160" name="hashFunction_" type="HashFunction*" type-id="HashFunction*" visibility="protected" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+      </attributes>
+      <operations>
+        <operation id="oc3bd754c9742491b82c8528854ce7b3e786" name="HashTableLow" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <documentation>
+            <text>
+              <content>
+                <paragraph line-spacing="1">
+                  <p index="0">
+                    <t />
+                    <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                      <text>
+                        <solid-brush color="#FF000000" />
+                      </text>
+                    </style>
+                  </p>
+                </paragraph>
+              </content>
+            </text>
+          </documentation>
+          <source-codes>
+            <source-code language="ActionScript" />
+          </source-codes>
+        </operation>
+        <operation id="o200964a185e74ab3a8bfa3abc22a9db8932" name="HashTableLow" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="const HashTableLow&amp; tableCopy" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o47203a1b739d4edab88f8d27ab57f159803" name="virtual HashTableLow" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oe3507abd4a264913a10e1a8a63cf51ab506" name="operator []" type="std::pair&lt;char*, char*&gt;&amp;" type-id="std::pair&lt;char*, char*&gt;&amp;" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o55f9d02b6ba34296a1f45f075fd81065182" name="virtual addLow" type="=0 : bool" type-id="=0 : bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+            <parameter id="" name="std" type="size_t bitsValue" type-id="size_t bitsValue" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oc776c0ba4b9a4ecb98adfe6ab89e563e281" name="virtual containsLow" type="=0 : bool" type-id="=0 : bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oe074e9ee0fd84c63b89ce958cbe6a4f0836" name="virtual removeLow" type="=0 : bool" type-id="=0 : bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="ocb678708177a4563bc42e9ac35616b7f88" name="virtual resizeLow" type="=0 : bool" type-id="=0 : bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="std" type="size_t* newLength" type-id="size_t* newLength" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o7339b8ee1f794c368c7603c1c85dee75917" name="virtual getLow" type="=0 : std::pair&lt;char*, char*&gt;" type-id="=0 : std::pair&lt;char*, char*&gt;" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="of876a3467a804df69c24bd42161ca1fe840" name="virtual sizeLow" type="=0 : std::size_t" type-id="=0 : std::size_t" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o56f2beb137c0478aa9ad5d3167221100551" name="virtual getElementLow" type="=0 : std::pair&lt;char*, char*&gt;*" type-id="=0 : std::pair&lt;char*, char*&gt;*" visibility="protected" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o49e22db2f1d24a82b9fa9cf12bdbe412115" name="virtual getIndex" type="=0 : std::size_t" type-id="=0 : std::size_t" visibility="protected" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+      </operations>
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+    <item id="di106973688175870718" cid="C008" type="class" name="HashTableLowOpen" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:24:08">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style background-type="vertical-linear" background-color="#FF80FF00" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+      <attributes>
+        <attribute id="adf865fc0723249eb95aff24f474f30a1589" name="searchStrategy_" type="int" type-id="int" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a649fdc31441542dc933e8e4d33c7b4d7508" name="factors_" type="std::size_t*" type-id="std::size_t*" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a07293df3f4bb4f6cb2c051dbd32fef70565" name="offsets_" type="std::vector&lt;char*&gt;" type-id="std::vector&lt;char*&gt;" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+      </attributes>
+      <operations>
+        <operation id="o2c490fae1b7b4d3f98487ff8260b52fa527" name="HashTableLowOpen" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o479da14e995748abaa4294957f3c10c6270" name="HashTableLowOpen" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="std" type="string fileNameOffsetsInput" type-id="string fileNameOffsetsInput" default-value="" />
+            <parameter id="" name="std" type="string fileNameHashTableInput" type-id="string fileNameHashTableInput" default-value="" />
+            <parameter id="" name="std" type="string fileNameInfoInput" type-id="string fileNameInfoInput" default-value="" />
+            <parameter id="" name="int lengthBucketsInput" type="" type-id="" default-value="" />
+            <parameter id="" name="int bitsOffsetInput" type="" type-id="" default-value="" />
+            <parameter id="" name="int bitsKeyInput" type="" type-id="" default-value="" />
+            <parameter id="" name="int bitsValueInput" type="" type-id="" default-value="" />
+            <parameter id="" name="int searchStrategyInput" type="" type-id="" default-value="" />
+            <parameter id="" name="int* factorsInput" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o86f3bb168b0c4f54b5602bc2a0ac07da398" name="HashTableLowOpen" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="const HashTableLowOpen&amp; tableCopy" type="" type-id="" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o5513f4aa755f43568ec1134e314b7a43451" name="HashTableLowOpen" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o9bf6f3adf19e4766b0b0183f13548fbc403" name="addLow" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+            <parameter id="" name="std" type="size_t bitsValue" type-id="size_t bitsValue" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="ob1de6c52f0474a779709253d202ae97d588" name="containsLow" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oaffb9a3ad621492e9ba17f6c9cc75cee563" name="getLow" type="std::pair&lt;char*, char*&gt;" type-id="std::pair&lt;char*, char*&gt;" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oc606e25b3b2f4e37a95e12e3be29b04f967" name="removeLow" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o0f332b5185504632afc2a93ced3fda38573" name="resizeLow" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="std" type="size_t* newLength" type-id="size_t* newLength" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o48df55eee4c742cbb534c2ddc06d1fc144" name="sizeLow" type="std::size_t" type-id="std::size_t" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o1dbf459d17fd45f8aad7a4ee0d08cec394" name="getElementLow" type="std::pair&lt;char*, char*&gt;*" type-id="std::pair&lt;char*, char*&gt;*" visibility="private" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o29da2f8bf3c6476ba0e76dab25c7882a968" name="getIndex" type="std::size_t" type-id="std::size_t" visibility="private" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o8cd6c98c8d3e44fb8e00f3591ca513d5599" name="getStatus" type="bool" type-id="bool" visibility="private" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+            <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+            <parameter id="" name="std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+      </operations>
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+  </items>
+  <models>
+    <model id="p726175901316175471" name="Model 1" type="model" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>04/07/2013 17:02:12</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <tagged-values />
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p323326920280624715" name="HashTable::Class" order-index="1" show-nullability="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>04/07/2013 17:02:12</creation-date>
+          <change-date>04/15/2014 22:52:13</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values />
+        <abstract-items>
+          <item id="di617870163625281624" cid="GNR002" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:24:08">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di668195784176479414" cid="C004" type="class" name="template&lt;class K = char*, class V = char*&gt; HashTableHigh" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:23:14">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="a0914d08aced54f0a8bd34f8a1ca572bf992" name="resultHigh_" type="std::pair&lt;K, V&gt;" type-id="std::pair&lt;K, V&gt;" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aea327ea4498b4bd3822201dd1f1eee37292" name="iteratorHigh_" type="HashTableHigh::Iterator" type-id="HashTableHigh::Iterator" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a6a9daf463bdf4bbeb4194a2089521acd324" name="hashTableLow_" type="HashTableLow*" type-id="HashTableLow*" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a48f1e2bf8986457e93aff1ad751103e548" name="addressing_" type="int" type-id="int" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o08b35dfd25584cc088176ec95a5cd9c1679" name="HashTableHigh" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o4565ab87d04c44d594fb698e89917b4043" name="HashTableHigh" type=")" type-id=")" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="std" type="string fileNameOffsetsInput" type-id="string fileNameOffsetsInput" default-value="" />
+                  <parameter id="" name="std" type="string fileNameHashTableInput" type-id="string fileNameHashTableInput" default-value="" />
+                  <parameter id="" name="std" type="string fileNameInfoInput" type-id="string fileNameInfoInput" default-value="" />
+                  <parameter id="" name="int addressingInput = 0" type="" type-id="" default-value="" />
+                  <parameter id="" name="int lengthBucketsInput = 16384" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsOffsetInput = 8" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKeyInput = 16" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValueInput = 32" type="" type-id="" default-value="" />
+                  <parameter id="" name="int *optionalParameters = reinterpret_cast&lt;int*&gt;(0" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o65f1b62b230d466bb8af0c99994b796b281" name="HashTableHigh" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const HashTableHigh&amp; tableCopy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o1717ef0b90d7414ab0105a55185acf0a879" name="HashTableHigh" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o7ce933f558e44d9d80110b085d763c66576" name="operator []" type="std ()::pair&lt;K, V&gt;&amp;" type-id="std ()::pair&lt;K, V&gt;&amp;" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o299ed90b5a0d47a389d576ff949196e5918" name="add" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="K key" type="" type-id="" default-value="" />
+                  <parameter id="" name="V value" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsValue" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o7a156485b32b491da2b22e2137e27c9664" name="contains" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="K key" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o7e24471d71aa41678e6d797f45dc5fc520" name="remove" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="K key" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o886c87007e0b4c8bb8bc1ad27139eb09838" name="resize" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="int* newLength" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o7454093b54054a0ea45d29a6e5ffa66f813" name="get" type="std::pair&lt;K, V&gt;" type-id="std::pair&lt;K, V&gt;" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="K key" type="" type-id="" default-value="" />
+                  <parameter id="" name="int bitsKey" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oa5ab3b1d7d3d4dd0a66f98db83987c6d552" name="size" type="std::size_t" type-id="std::size_t" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di665399450895369959" cid="GNR004" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:56:42">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di537065211970895834" cid="C012" type="class" name="std::iterator&lt;std::random_access_iterator_tag, HashTableLow&gt;" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 18:09:46">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes />
+            <operations />
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di882271116447631816" cid="C007" type="class" name="HashTableLowList" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:23:57">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF80FF00" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+            <attributes>
+              <attribute id="affc9d41026cd4654bb8b2d6cb9eae80a281" name="offsets_" type="std::vector&lt;std::list&lt;char*&gt; &gt;" type-id="std::vector&lt;std::list&lt;char*&gt; &gt;" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a8591905f80bf48f9987e38bcd48edca9786" name="sizeBlock_, nLinks_" type="std : :size_t" type-id="std : :size_t" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a7c0261cc8eb5432f8b85e0cab0a3b85d890" name="offsetsFlag_" type="std::vector&lt;bool&gt;" type-id="std::vector&lt;bool&gt;" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o7a871f139ac54339b3b73648a6b77928159" name="HashTableLowList" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="odcf6b45e4ca24647a44370c7e84b9816585" name="HashTableLowList" type="(std::string fileNameOffsetsInput, std::string fileNameHashTableInput, std::string fileNameInfoInput, int lengthBucketsInput, int bitsOffsetInput, int bitsKeyInput, int bitsValueInput, int sizeBlockInput)" type-id="(std::string fileNameOffsetsInput, std::string fileNameHashTableInput, std::string fileNameInfoInput, int lengthBucketsInput, int bitsOffsetInput, int bitsKeyInput, int bitsValueInput, int sizeBlockInput)" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oe75ab164cf68435d9766f98dcc79152438" name="HashTableLowList" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const HashTableLowList&amp; tableCopy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="odb472e34e8e54000aa9dbc20146a4378537" name="HashTableLowList" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o99e49cb4d81e40f4af04a1da77fccc7e931" name="addLow" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsValue" type-id="size_t bitsValue" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o0d66397328f740b0bc5450455037aafd758" name="containsLow" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oc5bf698e560e4adf9ea7b63b16fdb13f455" name="getLow" type="std::pair&lt;char*, char*&gt;" type-id="std::pair&lt;char*, char*&gt;" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o83c107c1bc77423e94bad2cad509be61518" name="removeLow" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o8e0186a115c54d49bc78069220d3f64f196" name="resizeLow" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="std" type="size_t* newLength" type-id="size_t* newLength" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o114305ad7ee749b2b6568072b7c1831d471" name="sizeLow" type="std::size_t" type-id="std::size_t" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o2a0e95aa801d46b887f606c67d01a1c2261" name="getElementLow" type="std::pair&lt;char*, char*&gt;*" type-id="std::pair&lt;char*, char*&gt;*" visibility="private" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ob8b7c0dfa56b48f79f03165776d99d5f353" name="getIndex" type="std::size_t" type-id="std::size_t" visibility="private" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oe6e7da34a8644cb18aed938454aee160364" name="getStatus" type="bool" type-id="bool" visibility="private" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                  <parameter id="" name="std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                  <parameter id="" name="std" type="size_t&amp; indexList" type-id="size_t&amp; indexList" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di753709753868833819" cid="GNR001" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:23:57">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di148547688553223150" cid="REL016" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:47:28">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di633645510742265538" to="di668195784176479414">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
+          </item>
+          <item id="di888644283969860973" cid="C014" type="class" name="IteratorHigh" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 18:18:09">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="aac56c4409c0447f38a03b277c4f4b0f7331" name="ptrCurrent_" type="HashTableHigh*" type-id="HashTableHigh*" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oa56773bf225d4bf5b40de4996ac979a5470" name="Iterator" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o0ba6bbc1eeb74a759cedc7bd54711d9c282" name="Iterator" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="value_type* ptrCurrent" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o05b490f3def84669b6225ac66de14686810" name="Iterator" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorCoppy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="od637cc98b7be499a9c9b3c2889c0842a124" name="Iterator" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o660bb6b3b496481895a87f0d0b450feb626" name="operator *" type="reference" type-id="reference" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o26fb908cb8ff40aeb670ab589bbd3d0f321" name="operator -&gt;" type="pointer" type-id="pointer" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oeb7cb4df968743febc9212d4e35bd28a747" name="operator []" type="reference" type-id="reference" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di531398029348881680" cid="DEP006" type="dependency" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 18:14:58">
+            <stereotypes>
+              <stereotype name="use" />
+            </stereotypes>
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di947453214529732611" cid="REL008" type="relationship" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:32:18">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di723463528181964063" to="di723463528181964063">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="" navigability="" association-type="composition" visibility="private" />
+            </relation>
+          </item>
+          <item id="di206139427188876312" cid="C013" type="class" name="IteratorLow" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 18:17:17">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="ad569be438c3f4bffa0305fb320949ef3856" name="ptrCurrent_" type="HashTableLow*" type-id="HashTableLow*" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a0f8690a1343749a49b4f43b6159ed9b1224" name="index_" type="size_type" type-id="size_type" visibility="protected" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="od5626f456ed144d384c76da3f7dc12bb8" name="Iterator" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o72ca56933ba7421b8d8ee94a18e88f9029" name="Iterator" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="value_type* ptrCurrent" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="of93925a8e09e42df86c27aecdffeea3f355" name="Iterator" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorCoppy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o8b799c1995094dbfb7a6ce14185697a665" name="Iterator" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o77a54a860ba34f60b743ea8ab2c4a416454" name="operator =" type="Iterator" type-id="Iterator" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorAssign" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o358a84545b344b2aad71963b3ab6aab5204" name="operator *" type="reference" type-id="reference" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o1dfca940a938401bbba99b10c26ad4d4617" name="operator -&gt;" type="pointer" type-id="pointer" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o37664eecf775429a906e493975d58ac0544" name="operator []" type="reference" type-id="reference" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ob299006433f7447494e97d1269765b9055" name="operator ++" type="Iterator" type-id="Iterator" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ocec02de4bce24f289ac75480830ed389625" name="operator --" type="Iterator" type-id="Iterator" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o0700640a18c64cf7b7bfff903e501e82742" name="operator +" type="Iterator" type-id="Iterator" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const size_type&amp; shift" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o7aa3c17817dc4bdc90cf8cbc10e75435373" name="operator -" type="Iterator" type-id="Iterator" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const size_type&amp; shift" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="odbb5df4d992d45f1a8893109067bc16487" name="operator +=" type="Iterator&amp;" type-id="Iterator&amp;" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const size_type&amp; shift" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o70880b4250804a6d9ab4d981a002802e474" name="operator -=" type="Iterator&amp;" type-id="Iterator&amp;" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const size_type&amp; shift" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o956f99890ac94d27b0f49620dbaa06dc597" name="operator -" type="difference_type" type-id="difference_type" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorSubtract" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o9db85e4d946441a08b087b9d0dac5007414" name="operator ==" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorCompare" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="od7e9e7c6081f4c59962654a6796ff09a378" name="operator !=" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorCompare" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="of93e3e7105c24362af1b2198e7b9632b79" name="operator &gt;" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorCompare" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o3b84b19f771747b7bb3a8edabf18dc82952" name="operator &lt;" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorCompare" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o2266a06b6d984869b462a5dcea393fb5623" name="operator &gt;=" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorCompare" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o7c9509c47c004cbf9481744c528aeb02858" name="operator &lt;=" type="bool" type-id="bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const Iterator&amp; iteratorCompare" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di805375435871194678" cid="GNR005" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 18:17:17">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di153099172621384254" cid="GNR006" type="generalization" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 18:18:09">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di833378286139907890" cid="DEP007" type="dependency" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 18:18:35">
+            <stereotypes>
+              <stereotype name="use" />
+            </stereotypes>
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di284267310591413293" cid="DEP008" type="dependency" name="" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 18:18:40">
+            <stereotypes>
+              <stereotype name="use" />
+            </stereotypes>
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di681640504597474660" cid="C001" type="class" name="HashTableLow" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="10/31/2013 17:22:20">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF00D500" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-5,-5" shadow-size="15,15" shadow-visible="true" shadow-color="#50000000" shadow-radius="0" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Arial;10;" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF000000" part-header-font="Arial;10;" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Arial;10;" text-horizontal-alignment="center" text-vertical-alignment="center" tagged-value-color="#FF000000" tagged-value-font="Arial;10;" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Arial;10;" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+            <attributes>
+              <attribute id="a4181ded79c45486b9be33425332bb7ac193" name="nBuckets_, lengthBuckets_, bitsOffset_, bitsKey_, bitsValue_" type="std : :size_t" type-id="std : :size_t" visibility="protected" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aceb109991dee426aa535fe9b55f91359231" name="fileOffsets_, fileHashTable_" type="std::fstream" type-id="std::fstream" visibility="protected" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a1e90c4bd7b82433f848b67eca352e858604" name="fileNameOffsets_, fileNameHashTable_" type="std::string" type-id="std::string" visibility="protected" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="adf7d074e80654099859ad6472325671e676" name="resultLow_" type="std::pair&lt;char*, char*&gt;" type-id="std::pair&lt;char*, char*&gt;" visibility="protected" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="ab2b56f6101ce49209ca0366000edb589668" name="iteratorLow_" type="HashTableLow::Iterator" type-id="HashTableLow::Iterator" visibility="protected" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aa36c15166014405d96f8917e57caaa1f160" name="hashFunction_" type="HashFunction*" type-id="HashFunction*" visibility="protected" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oc3bd754c9742491b82c8528854ce7b3e786" name="HashTableLow" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o200964a185e74ab3a8bfa3abc22a9db8932" name="HashTableLow" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const HashTableLow&amp; tableCoppy" type="" type-id="" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o47203a1b739d4edab88f8d27ab57f159803" name="HashTableLow" type="" type-id="" visibility="package" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oe3507abd4a264913a10e1a8a63cf51ab506" name="operator []" type="std::pair&lt;char*, char*&gt;&amp;" type-id="std::pair&lt;char*, char*&gt;&amp;" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o55f9d02b6ba34296a1f45f075fd81065182" name="virtual addLow" type="=0 : bool" type-id="=0 : bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="char* ptrValue" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsValue" type-id="size_t bitsValue" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oc776c0ba4b9a4ecb98adfe6ab89e563e281" name="virtual containsLow" type="=0 : bool" type-id="=0 : bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oe074e9ee0fd84c63b89ce958cbe6a4f0836" name="virtual removeLow" type="=0 : bool" type-id="=0 : bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ocb678708177a4563bc42e9ac35616b7f88" name="virtual resizeLow" type="=0 : bool" type-id="=0 : bool" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o7339b8ee1f794c368c7603c1c85dee75917" name="virtual getLow" type="=0 : std::pair&lt;char*, char*&gt;" type-id="=0 : std::pair&lt;char*, char*&gt;" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrKey" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t bitsKey" type-id="size_t bitsKey" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="of876a3467a804df69c24bd42161ca1fe840" name="virtual sizeLow" type="=0 : std::size_t" type-id="=0 : std::size_t" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o56f2beb137c0478aa9ad5d3167221100551" name="virtual getElementLow" type="=0 : std::pair&lt;char*, char*&gt;*" type-id="=0 : std::pair&lt;char*, char*&gt;*" visibility="protected" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o49e22db2f1d24a82b9fa9cf12bdbe412115" name="virtual getIndex" type="=0 : std::size_t" type-id="=0 : std::size_t" visibility="protected" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="const std" type="size_t&amp; index" type-id="size_t&amp; index" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oe3831fc334624e7f8c09056abe574a0d838" name="setNull" type="void" type-id="void" visibility="protected" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="char* ptrMassive" type="" type-id="" default-value="" />
+                  <parameter id="" name="std" type="size_t lengthMassive" type-id="size_t lengthMassive" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di668195784176479414" iid="f9bb2e9bcb4d4c50893c1866f267bdf3" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:23:14" order-index="3" type="entity">
+            <layout ax="-362" ay="-36" awidth="505" aheight="329" x="-362" y="-36" width="505" height="329" angle="0" />
+            <class />
+          </item>
+          <item id="di882271116447631816" iid="2be9c6dfa6274c4b8b1e12da3ee134d6" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:23:57" order-index="6" type="entity">
+            <layout ax="222" ay="855" awidth="556" aheight="341" x="222" y="855" width="556" height="341" angle="0" />
+            <class />
+          </item>
+          <item id="di753709753868833819" iid="e60be59fedbc444c9c1ac39958ca5ad2" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:23:57" order-index="7" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="496" y1="855" x2="492" y2="703" start-border-pos="0.123010278605729" end-border-pos="0.628357987176804">
+              <points>
+                <point x="496" y="855" />
+                <point x="492" y="703" />
+              </points>
+            </layout>
+            <relation from="di882271116447631816" from-iid="2be9c6dfa6274c4b8b1e12da3ee134d6" to="di633645510742265538" to-iid="dfa2e3067acc4b3499855ad58c173ed2" />
+          </item>
+          <item id="di617870163625281624" iid="59e14ce5bc2e44af8006a27502963663" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:24:08" order-index="9" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="489" y1="173" x2="488" y2="267" start-border-pos="0.624098967090387" end-border-pos="0.126063628423782">
+              <points>
+                <point x="489" y="173" />
+                <point x="488" y="267" />
+              </points>
+            </layout>
+            <relation from="di106973688175870718" from-iid="80a3e34456ea4b6aa754924a2aa1d6a7" to="di633645510742265538" to-iid="dfa2e3067acc4b3499855ad58c173ed2" />
+          </item>
+          <item id="di148547688553223150" iid="7edb1c6f9e3f4e5e9f161811388d52c3" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:47:28" order-index="14" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="276" y1="359" x2="143" y2="280" start-border-pos="0.802873506458528" end-border-pos="0.489776054776548">
+              <points>
+                <point x="276" y="359" />
+                <point x="143" y="280" />
+              </points>
+            </layout>
+            <relation from="di633645510742265538" from-iid="dfa2e3067acc4b3499855ad58c173ed2" to="di668195784176479414" to-iid="f9bb2e9bcb4d4c50893c1866f267bdf3" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+          <item id="di500656545595181547" iid="0d547f8c122a4f5cbf004e328d82d482" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:33:08" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="1020" y1="262" x2="1011" y2="396" start-border-pos="0.620891664086319" end-border-pos="0.127596458292896">
+              <points>
+                <point x="1020" y="262" />
+                <point x="1011" y="396" />
+              </points>
+            </layout>
+            <relation from="di841998530274193225" from-iid="4a39e5a608b245969ed5f858d28668f5" to="di717828953470859571" to-iid="ea275aba97144948a977551098c0ab87" />
+          </item>
+          <item id="di717828953470859571" iid="ea275aba97144948a977551098c0ab87" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:23:19" order-index="4" type="entity">
+            <layout ax="847" ay="396" awidth="322" aheight="102" x="847" y="396" width="322" height="102" angle="0" />
+            <class />
+          </item>
+          <item id="di537065211970895834" iid="178f42d631c04abea678ba75276ea699" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 18:09:46" order-index="15" type="entity">
+            <layout ax="-671" ay="763" awidth="218" aheight="49" x="-671" y="763" width="218" height="49" angle="0" />
+            <class />
+          </item>
+          <item id="di531398029348881680" iid="9bfe7aa31a174183805e28e2b21b9bcf" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 18:14:58" order-index="17" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="696" y1="470" x2="847" y2="459" start-border-pos="0.36623431564471" end-border-pos="0.903726241167854">
+              <points>
+                <point x="696" y="470" />
+                <point x="847" y="459" />
+              </points>
+            </layout>
+            <relation from="di633645510742265538" from-iid="dfa2e3067acc4b3499855ad58c173ed2" to="di717828953470859571" to-iid="ea275aba97144948a977551098c0ab87" />
+          </item>
+          <item id="di206139427188876312" iid="a8b1ff00cc1f4152a1d7658ebb4bd518" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 18:17:17" order-index="18" type="entity">
+            <layout ax="-327.5" ay="548" awidth="471" aheight="419" x="-327.5" y="548" width="471" height="419" angle="0" />
+            <class />
+          </item>
+          <item id="di805375435871194678" iid="955859e17370474781278f93c78d31d1" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 18:17:17" order-index="19" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="-328" y1="773" x2="-453" y2="781" start-border-pos="0.884248210023866" end-border-pos="0.342053783183195">
+              <points>
+                <point x="-328" y="773" />
+                <point x="-453" y="781" />
+              </points>
+            </layout>
+            <relation from="di206139427188876312" from-iid="a8b1ff00cc1f4152a1d7658ebb4bd518" to="di537065211970895834" to-iid="178f42d631c04abea678ba75276ea699" />
+          </item>
+          <item id="di888644283969860973" iid="0a1e839dba9744dcadf17819e8c7a79c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 18:18:09" order-index="20" type="entity">
+            <layout ax="-684.5" ay="425" awidth="207" aheight="213" x="-684.5" y="425" width="207" height="213" angle="0" />
+            <class />
+          </item>
+          <item id="di153099172621384254" iid="11123f7f03284e83a818996c6bfc6d83" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 18:18:09" order-index="21" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="-478" y1="580" x2="-328" y2="649" start-border-pos="0.432001678036972" end-border-pos="0.810495563224847">
+              <points>
+                <point x="-478" y="580" />
+                <point x="-328" y="649" />
+              </points>
+            </layout>
+            <relation from="di888644283969860973" from-iid="0a1e839dba9744dcadf17819e8c7a79c" to="di206139427188876312" to-iid="a8b1ff00cc1f4152a1d7658ebb4bd518" />
+          </item>
+          <item id="di833378286139907890" iid="047eb374c9dd4c8fa7072ad0489fe928" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 18:18:35" order-index="22" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="276" y1="584" x2="144" y2="647" start-border-pos="0.931873181544313" end-border-pos="0.309072307868903">
+              <points>
+                <point x="276" y="584" />
+                <point x="144" y="647" />
+              </points>
+            </layout>
+            <relation from="di633645510742265538" from-iid="dfa2e3067acc4b3499855ad58c173ed2" to="di206139427188876312" to-iid="a8b1ff00cc1f4152a1d7658ebb4bd518" />
+          </item>
+          <item id="di284267310591413293" iid="886359d200a94231b6da518f248af92b" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 18:18:40" order-index="23" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="-302" y1="293" x2="-478" y2="443" start-border-pos="0.529522841047532" end-border-pos="0.27088505561363">
+              <points>
+                <point x="-302" y="293" />
+                <point x="-478" y="443" />
+              </points>
+            </layout>
+            <relation from="di668195784176479414" from-iid="f9bb2e9bcb4d4c50893c1866f267bdf3" to="di888644283969860973" to-iid="0a1e839dba9744dcadf17819e8c7a79c" />
+          </item>
+          <item id="di633645510742265538" iid="dfa2e3067acc4b3499855ad58c173ed2" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:22:20" order-index="0" type="entity">
+            <layout ax="276" ay="267" awidth="420" aheight="436" x="276" y="267" width="420" height="436" angle="0" />
+            <class />
+          </item>
+          <item id="di106973688175870718" iid="80a3e34456ea4b6aa754924a2aa1d6a7" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:24:08" order-index="8" type="entity">
+            <layout ax="221" ay="-179" awidth="539" aheight="352" x="221" y="-179" width="539" height="352" angle="0" />
+            <class />
+          </item>
+          <item id="di841998530274193225" iid="4a39e5a608b245969ed5f858d28668f5" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="10/31/2013 17:33:08" order-index="11" type="entity">
+            <layout ax="921" ay="144" awidth="205" aheight="118" x="921" y="144" width="205" height="118" angle="0" />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+  <documents />
+  <document-templates />
+</sim-project>
